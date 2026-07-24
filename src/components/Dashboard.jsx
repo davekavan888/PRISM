@@ -1,3 +1,4 @@
+import Watchlist from "./Watchlist";
 import Navbar from "./layout/Navbar";
 import MarketCard from "./MarketCard";
 import NewsPanel from "./NewsPanel";
@@ -14,11 +15,20 @@ function Dashboard() {
     >
       <Navbar />
 
-      <h1 style={{ color: "#38bdf8", marginBottom: "10px" }}>
+      <h1
+        style={{
+          color: "#38bdf8",
+          marginBottom: "10px",
+        }}
+      >
         PRISM Dashboard
       </h1>
 
-      <p style={{ marginBottom: "20px" }}>
+      <p
+        style={{
+          marginBottom: "20px",
+        }}
+      >
         AI Powered Market Intelligence Platform
       </p>
 
@@ -26,6 +36,7 @@ function Dashboard() {
         style={{
           display: "flex",
           alignItems: "flex-start",
+          gap: "30px",
         }}
       >
         <div>
@@ -54,6 +65,8 @@ function Dashboard() {
               change="Confidence: 84%"
             />
           </div>
+
+          <Watchlist />
         </div>
 
         <NewsPanel />

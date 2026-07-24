@@ -38,3 +38,4 @@ function MarketCard({ title, value, change }) {
 }
 
 export default MarketCard;
+
